@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Collab Practice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .setting-group {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .setting-group h3 {
+            margin-top: 0;
+        }
+        label {
+            display: block;
+            margin: 10px 0;
+        }
+        input, select {
+            padding: 8px;
+            border-radius: 5px;
+            border: none;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        button {
+            background: #ffd700;
+            color: #333;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background: #ffed4e;
+        }
+        a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>⚙️ Settings</h1>
+        <p>Configure your application</p>
+        <p>Created by Developer 2</p>
+        
+        <div class="setting-group">
+            <h3>👤 Profile Settings</h3>
+            <label>
+                Username:
+                <input type="text" placeholder="Enter username">
+            </label>
+            <label>
+                Email:
+                <input type="email" placeholder="Enter email">
+            </label>
+        </div>
+
+        <div class="setting-group">
+            <h3>🎨 Appearance</h3>
+            <label>
+                Theme:
+                <select>
+                    <option>Light</option>
+                    <option>Dark</option>
+                    <option>Auto</option>
+                </select>
+            </label>
+            <label>
+                Language:
+                <select>
+                    <option>English</option>
+                    <option>Spanish</option>
+                    <option>French</option>
+                </select>
+            </label>
+        </div>
+
+        <div class="setting-group">
+            <h3>🔔 Notifications</h3>
+            <label>
+                <input type="checkbox" checked> Email notifications
+            </label>
+            <label>
+                <input type="checkbox" checked> Push notifications
+            </label>
+        </div>
+
+        <button>Save Settings</button>
+        
+        <p style="margin-top: 30px;">
+            <a href="home.html">← Back to Home</a>
+        </p>
+    </div>
+</body>
+</html>
